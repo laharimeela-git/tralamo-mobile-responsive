@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             inquiryForm.reset();
             
             // Open WhatsApp with the message
-            window.open(`https://wa.me/919700135300?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/918121120120?text=${encodedMessage}`, '_blank');
         });
     };
     
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsappButton.addEventListener('click', function() {
                 const message = "Hello Tralamo! I'm interested in learning more about your travel packages. Could you provide me with more information?";
                 const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/919700135300?text=${encodedMessage}`, '_blank');
+                window.open(`https://wa.me/918121120120?text=${encodedMessage}`, '_blank');
             });
         }
         
