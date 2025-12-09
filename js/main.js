@@ -43,8 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Close mobile menu if open
                 if (document.body.classList.contains('menu-open')) {
                     document.body.classList.remove('menu-open');
-                    document.querySelector('.mobile-menu').classList.remove('active');
-                    updateMobileMenuIcon(false);
+                    const mobileMenu = document.querySelector('.mobile-menu');
+                    if (mobileMenu) {
+                        mobileMenu.classList.remove('active');
+                    }
+                    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+                    if (mobileMenuButton) {
+                        mobileMenuButton.innerHTML = `
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        `;
+                    }
                 }
             }
         });
@@ -559,4 +569,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     setupImageCarousels();
+    
+    // Set current year in footer
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 }); 

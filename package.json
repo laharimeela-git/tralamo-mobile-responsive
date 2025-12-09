@@ -1,0 +1,25 @@
+{
+  "name": "tralamo-web",
+  "version": "1.0.0",
+  "description": "Tralamo - Innovative Travel Solutions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": [
+    "travel",
+    "tralamo",
+    "tourism"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
