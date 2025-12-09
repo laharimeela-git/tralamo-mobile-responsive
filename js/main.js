@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const packageName = packageNameInput.value;
             
             // Prepare WhatsApp message
-            let whatsappMessage = `Hello Hypermiles! I would like to inquire about the *${packageName}*.\n\n`;
+            let whatsappMessage = `Hello Tralamo! I would like to inquire about the *${packageName}*.\n\n`;
             whatsappMessage += `Name: ${name}\n`;
             whatsappMessage += `Phone: ${phone}\n`;
             
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
             inquiryForm.reset();
             
             // Open WhatsApp with the message
-            window.open(`https://wa.me/918142411666?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/919700135300?text=${encodedMessage}`, '_blank');
         });
     };
     
@@ -303,9 +303,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const whatsappButton = document.querySelector('.whatsapp-button');
         if (whatsappButton) {
             whatsappButton.addEventListener('click', function() {
-                const message = "Hello Hypermiles! I'm interested in learning more about your travel packages. Could you provide me with more information?";
+                const message = "Hello Tralamo! I'm interested in learning more about your travel packages. Could you provide me with more information?";
                 const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/918142411666?text=${encodedMessage}`, '_blank');
+                window.open(`https://wa.me/919700135300?text=${encodedMessage}`, '_blank');
             });
         }
         
@@ -314,8 +314,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (emailButton) {
             emailButton.addEventListener('click', function() {
                 const subject = encodeURIComponent("Travel Package Inquiry");
-                const body = encodeURIComponent("Hello Hypermiles,\n\nI'm interested in learning more about your travel packages. Could you provide me with more information?\n\nThank you,\n[Your Name]");
-                window.location.href = `mailto:leads@hypermiles.com?subject=${subject}&body=${body}`;
+                const body = encodeURIComponent("Hello Tralamo,\n\nI'm interested in learning more about your travel packages. Could you provide me with more information?\n\nThank you,\n[Your Name]");
+                window.location.href = `mailto:info@tralamo.com?subject=${subject}&body=${body}`;
             });
         }
     };
